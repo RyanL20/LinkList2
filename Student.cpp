@@ -14,8 +14,8 @@ Student::Student(char* newFirstName, char* newLastName, int newID, float newGPA)
   firstName = new char[80];
   lastName = new char[80];
 
-  //strcpy(firstName, newFirstName);
-  //strcpy(lastName, newLastName);
+  firstName = newFirstName;
+  lastName = newLastName;
   ID = newID;
   GPA = newGPA;
 }
@@ -25,14 +25,12 @@ Student::~Student() {
 
 void Student::setFirstName(char* newFirstName) {
   firstName = newFirstName;
-  //strcpy(firstName, newFirstName);
 }
 char* Student::getFirstName() {
   return firstName;
 }
 void Student::setLastName(char* newLastName) {
   lastName = newLastName;
-  //strcpy(lastName, newLastName);
 }
 char* Student::getLastName() {
   return lastName;

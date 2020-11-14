@@ -3,12 +3,13 @@
 #include <iostream>
 #include <cstring>
 
+
 using namespace std;
 
 class Student {
  public:
   Student();
-  Student(char* newFirstName, char* newLastName, int ID, float GPA);
+  Student(char* newFirstName, char* newLastName, int newID, float newGPA);
      ~Student();
 
      void setFirstName(char* newFirstName);
